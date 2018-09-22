@@ -19,7 +19,7 @@ import * as WC from 'woocommerce-api';
 export class ConfigProvider {
 
 
-  public url: string = 'http://androidsrc.ir';
+  public url: string = 'https://androidsrc.ir';
   public consumerKey: string = 'ck_ca81eecc807927c5949c28675b5caba53f8e9709';
   public consumerSecret: string = 'cs_c92b1ade6475716c1c7b3d4f8aca1940b1d054e6';
 
@@ -38,7 +38,7 @@ export class ConfigProvider {
   public loader = 'dots';
   public newProductDuration = 100;
   public cartButton = 1;//1 = show and 0 = hide
-  public currency = "$";
+  public currency = "تومان";
   public currencyPos = "left";
   public paypalCurrencySymbol = 'USD';
   public address;
@@ -90,7 +90,7 @@ export class ConfigProvider {
   public checkOutPage = 1; // <!-- 2.0 updates -->
 
   constructor(
-    public http: Http,
+    public https: Https,
     private storage: Storage,
     public platform: Platform,
     private localNotifications: LocalNotifications,
